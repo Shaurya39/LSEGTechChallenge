@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LSEGOutliersOfTimeSeriesData" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+		<listener class-name="com.LSEG.utilities.TestListener" />
+	</listeners>
+
+	<test name="Finding Outliers" preserve-order="true" enabled="true">
+		<classes>
+			<class
+				name="com.LSEG.testCases.IdentifyOutliersOfTimeSeriesData">
+				<methods>
+					<parameter name="folderName" value="LSE" />
+					<parameter name="noOfFiles" value="2" />
+					<include name="processTheFiles" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
