@@ -43,7 +43,7 @@ public class IdentifyOutliersOfTimeSeriesData {
             ExtentReportCreator.logText("info", "fetched files from the folder are "+Arrays.toString(fileNames));
             
 			/*
-			 * If there aren’t enough files present for a given exchange, process whatever
+			 * If there are not enough files present for a given exchange process whatever
 			 * number of files are present even if it is lower
 			 */
 			int loopCount = 0;
